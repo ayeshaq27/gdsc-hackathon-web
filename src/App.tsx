@@ -140,7 +140,7 @@ const App: FC = () => {
             <>
               {/**  <NavBar />*/}
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
               </Routes>
               <div style={{ backgroundColor: "#F9F9FF", marginTop: "0vh" }}>
                 <Footer />
