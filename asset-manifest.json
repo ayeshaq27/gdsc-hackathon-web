@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/gdsc-hackathon-web/static/css/main.0d010eca.css",
-    "main.js": "/gdsc-hackathon-web/static/js/main.5acc97c4.js",
+    "main.css": "/gdsc-hackathon-web/static/css/main.36d4b0b2.css",
+    "main.js": "/gdsc-hackathon-web/static/js/main.28db583d.js",
     "static/js/453.8474c837.chunk.js": "/gdsc-hackathon-web/static/js/453.8474c837.chunk.js",
     "static/media/bgMobile.svg": "/gdsc-hackathon-web/static/media/bgMobile.680a6e6b208e2a53481d.svg",
     "static/media/bg2.svg": "/gdsc-hackathon-web/static/media/bg2.8ba148292b9f6066a352.svg",
     "index.html": "/gdsc-hackathon-web/index.html",
-    "main.0d010eca.css.map": "/gdsc-hackathon-web/static/css/main.0d010eca.css.map",
-    "main.5acc97c4.js.map": "/gdsc-hackathon-web/static/js/main.5acc97c4.js.map",
+    "main.36d4b0b2.css.map": "/gdsc-hackathon-web/static/css/main.36d4b0b2.css.map",
+    "main.28db583d.js.map": "/gdsc-hackathon-web/static/js/main.28db583d.js.map",
     "453.8474c837.chunk.js.map": "/gdsc-hackathon-web/static/js/453.8474c837.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d010eca.css",
-    "static/js/main.5acc97c4.js"
+    "static/css/main.36d4b0b2.css",
+    "static/js/main.28db583d.js"
   ]
 }
