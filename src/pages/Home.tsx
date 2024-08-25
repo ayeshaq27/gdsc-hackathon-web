@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Box, Typography, Grid, useTheme, Container, SxProps } from "@mui/material";
+import { Box, Typography, Grid, Container } from "@mui/material";
 import "./Home.css";
 import "../App.css";
 
@@ -49,7 +49,7 @@ const calculateTimeLeft = () => {
 };
 
 const Home: React.FC = () => {
-  const theme = useTheme();
+
   
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 

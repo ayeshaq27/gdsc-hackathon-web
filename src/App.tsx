@@ -1,7 +1,6 @@
 import React, { FC, useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Home.tsx";
-import NavBar from "./components/formikInputs/NavBar.tsx";
 import Loader from "./components/formikInputs/Loader.tsx";
 import "./index.css";
 import Footer from "./components/formikInputs/Footer.tsx";
