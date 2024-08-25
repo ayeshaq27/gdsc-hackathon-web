@@ -19,7 +19,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "allowImportingTsExtensions": true // Added this line
+    "allowImportingTsExtensions": true, // Added this line
+    "noUnusedLocals": false
   },
   "include": [
     "src"
