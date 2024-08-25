@@ -1,6 +1,6 @@
 import React, { FC, useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home.tsx";
+import HomePage from "./pages/Home.tsx";
 import NavBar from "./components/formikInputs/NavBar.tsx";
 import Loader from "./components/formikInputs/Loader.tsx";
 import "./index.css";
@@ -140,7 +140,7 @@ const App: FC = () => {
             <>
               {/**  <NavBar />*/}
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<HomePage />} />
               </Routes>
               <div style={{ backgroundColor: "#F9F9FF", marginTop: "0vh" }}>
                {/**<Footer /> */}
