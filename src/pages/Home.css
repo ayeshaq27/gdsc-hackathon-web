@@ -1,0 +1,78 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.logo {
+  width: 80%; /* Use a percentage for responsiveness */
+  max-width: 600px; /* Ensure it doesn't get too large */
+  margin-bottom: 20px;
+}
+
+.main-heading {
+  font-size: 2.5rem; /* Adjusted for smaller screens */
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10vh !important;
+}
+
+.timer-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.timer-box {
+  background-color: #4285f4; /* Blue color */
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 10px; /* Adjusted for better spacing on smaller screens */
+}
+
+.timer-value {
+  font-size: 2.5rem; /* Adjusted for smaller screens */
+  font-weight: bold;
+  color: #ffffff; /* White color */
+}
+
+.timer-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000; /* Black color */
+  margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 2rem; /* Smaller font size for tablets */
+  }
+
+  .timer-value {
+    font-size: 2rem; /* Smaller font size for tablets */
+  }
+
+  .timer-box {
+    padding: 15px 20px; /* Adjust padding for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .timer-value {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .timer-box {
+    padding: 10px 15px; /* Adjust padding for mobile */
+  }
+}

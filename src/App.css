@@ -1,0 +1,234 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+.content-wrapper {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media only screen and (min-width: 600px) {
+  .content-wrapper {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .content-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.primary-bg {
+  background: #FFFFFF;
+}
+
+
+.smoke-bg {
+  background: #F5F5F5;
+}
+
+/* Regular, Medium , SemiBold, Bold */
+.font-lg-28 {
+  font-size: 28px !important;
+}
+
+.font-lg-24 {
+  font-size: 24px !important;
+}
+
+.font-lg-21 {
+  font-size: 24px !important;
+}
+
+
+.font-nm-18 {
+  font-size: 18px !important;
+}
+
+.font-nm-16 {
+  font-size: 16px !important;
+}
+
+.font-nm-14 {
+  font-size: 14px !important;
+}
+
+.font-sm-12 {
+  font-size: 12px !important;
+}
+
+.font-sm-10 {
+  font-size: 10px !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .fullWidth500 {
+    width: 100% !important;
+  }
+  .font-sm-12-mb {
+    font-size: 12px !important;
+  }
+  .carousel {
+    margin-left: 0 !important;
+  }
+}
+
+.cart-page-table {
+  min-width: 500;
+  overflow-x: 'scroll';
+}
+
+.cart-page-cell {
+  padding: 10px;
+}
+
+.text-reg {
+  font-family:Product Sans Regular, Arial, sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 150% !important;
+  word-wrap: break-word;
+}
+
+.text-med {
+  font-family:Product Sans Medium, Arial, sans-serif !important;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+  word-wrap: break-word;
+}
+
+.text-semibold {
+  font-family:Product Sans Bold, Arial, sans-serif !important;
+  font-weight: 600 !important;
+  line-height: 150% !important;
+  word-wrap: break-word;
+}
+
+.text-bold {
+  font-family:Product Sans Black, Arial, sans-serif !important;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+  word-wrap: break-word;
+}
+
+.line-19 {
+  
+  padding: 1px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, white));
+}
+
+ul.list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.list li::before {
+  content: "\2022";
+  margin-right: 5px;
+  color: #4285F4;
+}
+
+.list > li {
+  margin-top: 10px;
+}
+
+.orangeLeftBorder {
+  border-left: 2px solid #FD7B19;
+  padding-left: 8px;
+}
+
+.homeHeader {
+  align-items: center;
+  align-content: center;
+  text-align: center !important ;
+  padding: 15vw 10vw 0vw 10vw;
+  margin-top: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-image: url('/public/bg2.svg');
+  background-size: cover;
+  background-position: top;
+  padding-bottom: 20vh;
+}
+@media (max-width: 600px) {
+  .homeHeader {
+    background-image: url('/public/bgMobile.svg') !important; /* Change this to your mobile background image */
+  }
+  .carousel {
+    margin-left: 0 !important;
+  }
+}
+
+
+/* ContactForm.css */
+.text-field {
+  background: #F9F9FF;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.text-field input,
+.text-field textarea {
+  border: none !important;
+  outline: none  !important;
+}
+
+
+
+
+.memberImageSm {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  border: 2px solid white;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+.memberImage {
+  width: 124px;
+  height: 124px;
+  margin: 0;
+  border: 2px solid white;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.memberBox {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .memberImage {
+    display:none;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .memberImageSm {
+    display:none;
+  }
+}
+
+.bttnO:hover,
+.bttnO:active {
+  background-color: #4285F4 !important;
+  color: #F5F5F5 !important;
+  
+}
+.bttnF:hover,
+.bttnF:active {
+  background-color: #ffffff !important;
+  color: #4285F4 !important;
+  border: 1px solid #4285F4;
+  box-shadow: none !important;
+  
+}
+
