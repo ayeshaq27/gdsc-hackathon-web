@@ -131,7 +131,7 @@ const App: FC = () => {
   });
 
   return (
-     <Router>
+    <Router>
       <div className="app-container">
         <ThemeProvider theme={theme}>
           {loading ? (
@@ -143,7 +143,7 @@ const App: FC = () => {
                 <Route path="/" element={<HomePage />} />
               </Routes>
               <div style={{ backgroundColor: "#F9F9FF", marginTop: "0vh" }}>
-               {/**<Footer /> */}
+                <Footer />
               </div>
             </>
           )}
