@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/gdsc-hackathon-web/static/css/main.36d4b0b2.css",
-    "main.js": "/gdsc-hackathon-web/static/js/main.1adcdce0.js",
+    "main.js": "/gdsc-hackathon-web/static/js/main.e6aec8f6.js",
     "static/js/453.8474c837.chunk.js": "/gdsc-hackathon-web/static/js/453.8474c837.chunk.js",
     "static/media/bgMobile.svg": "/gdsc-hackathon-web/static/media/bgMobile.680a6e6b208e2a53481d.svg",
     "static/media/bg2.svg": "/gdsc-hackathon-web/static/media/bg2.8ba148292b9f6066a352.svg",
     "index.html": "/gdsc-hackathon-web/index.html",
     "main.36d4b0b2.css.map": "/gdsc-hackathon-web/static/css/main.36d4b0b2.css.map",
-    "main.1adcdce0.js.map": "/gdsc-hackathon-web/static/js/main.1adcdce0.js.map",
+    "main.e6aec8f6.js.map": "/gdsc-hackathon-web/static/js/main.e6aec8f6.js.map",
     "453.8474c837.chunk.js.map": "/gdsc-hackathon-web/static/js/453.8474c837.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.36d4b0b2.css",
-    "static/js/main.1adcdce0.js"
+    "static/js/main.e6aec8f6.js"
   ]
 }
