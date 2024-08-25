@@ -5,13 +5,13 @@ const Loader: React.FC = () => {
   return (
     <div className="loader-container">
       <div className="logo-wrapper">
-        <img src="/logoHalf.png" alt="Logo Part 1" className="logo-part" />
+      <img src={`${process.env.PUBLIC_URL}/logoHalf.png`} alt="Logo Part 1" />
         <div className="dots">
           <span className="dot"></span>
           <span className="dot"></span>
           <span className="dot"></span>
         </div>
-        <img src="/logoHalf2.png" alt="Logo Part 2" className="logo-part" />
+        <img src={`${process.env.PUBLIC_URL}/logoHalf2.png`} alt="Logo Part 1" />
       </div>
     </div>
   );

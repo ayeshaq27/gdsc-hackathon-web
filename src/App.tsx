@@ -131,17 +131,16 @@ const App: FC = () => {
   });
 
   return (
-    <Router>
-      <div className="App">
+     <Router>
+      <div className="app-container">
         <ThemeProvider theme={theme}>
           {loading ? (
             <Loader /> // Display the Loader on initial load
           ) : (
             <>
-             {/**  <NavBar />*/}
+              {/**  <NavBar />*/}
               <Routes>
-                <Route path="/" element={<Home />} />
-
+                <Route path="/home" element={<Home />} />
               </Routes>
               <div style={{ backgroundColor: "#F9F9FF", marginTop: "0vh" }}>
                 <Footer />
