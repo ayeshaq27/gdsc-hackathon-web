@@ -142,7 +142,9 @@ const App: FC = () => {
                 <Route path="/" element={<HomePage />} />
                 <Route path="*" element="notfound"/>
               </Routes>
-              
+              <div style={{backgroundColor: '#f9f9ff', marginTop: '10vh'}}> 
+                <Footer />
+              </div>
               
             
             </>
