@@ -130,7 +130,7 @@ const App: FC = () => {
   });
 
   return (
-    <Router>
+    <Router basename="/gdsc-hackathon-web">
       <div className="app-container">
         <ThemeProvider theme={theme}>
           {loading ? (
@@ -140,6 +140,7 @@ const App: FC = () => {
               {/**  <NavBar />*/}
               <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="*" element="notfound"/>
               </Routes>
               
               
