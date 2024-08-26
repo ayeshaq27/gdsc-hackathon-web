@@ -3,42 +3,42 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: white;
+  background-color: white; /* Background color of the loader page */
 }
 
 .logo-wrapper {
   display: flex;
-  align-items: flex-end;
-  position: relative;
+  align-items: bottom;
+  gap: 20px; /* Space between the images and the dots */
 }
 
 .logo-part {
-  width: auto;
-  height: 20vh !important;
+  width: 80px; /* Adjust the size of the logo parts */
+  height: auto;
 }
 
 .dots {
   display: flex;
   align-items: flex-end;
-  gap: 10px;
+  gap: 10px; /* Space between dots */
 }
 
 .dot {
   width: 15px;
   height: 15px;
-  background-color: #d3d3d3;
+  background-color: #97befc; /* Initial color of the first dot */
   border-radius: 50%;
   animation: blink 1.4s infinite both;
 }
 
 .dot:nth-child(2) {
   animation-delay: 0.2s;
-  background-color: #a9a9a9;
+  background-color: #639bf5; /* Slightly darker shade */
 }
 
 .dot:nth-child(3) {
   animation-delay: 0.4s;
-  background-color: #000;
+  background-color: #4285f4; /* Darkest dot */
 }
 
 @keyframes blink {
