@@ -14,7 +14,7 @@ const calculateTimeLeft = () => {
     now.getUTCSeconds()
   );
 
-  const targetDateUTC = Date.UTC(2025, 0, 1, 0, 0, 0); // January 1, 2025, 00:00:00 UTC
+  const targetDateUTC = Date.UTC(2025, 1, 14, 0, 0, 0);
 
   console.log("Current UTC Time (ms):", currentTimeUTC);
   console.log("Target UTC Time (ms):", targetDateUTC);
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
       </Grid>
       <Container sx={{marginTop: '5vh'}}>
         <Typography className="text-bold font-lg-24">
-          January 1st, 2025
+          February 14th - 16th, 2025
         </Typography>
       </Container>
       
