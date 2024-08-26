@@ -141,9 +141,9 @@ const App: FC = () => {
               <Routes>
                 <Route path="/" element={<HomePage />} />
               </Routes>
-              <div style={{ backgroundColor: "#F9F9FF", marginTop: "0vh" }}>
-                <Footer />
-              </div>
+              
+              
+            
             </>
           )}
         </ThemeProvider>
