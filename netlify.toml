@@ -1,0 +1,9 @@
+[build]
+  base = ""
+  publish = "build"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/gdsc-hackathon-web/*"
+  to = "/gdsc-hackathon-web/index.html"
+  status = 200
