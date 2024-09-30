@@ -65,7 +65,7 @@ const Home: React.FC = () => {
     <Box className="home-container">
             <img src={`${process.env.PUBLIC_URL}/logo.svg`} alt="Logo" className="logo" width={690} height={120} />
       <Typography variant="h1" className="main-heading">
-      COMING SOON: GDSC TMU Hacks
+      COMING SOON: GDG TMU Solution Hacks
       </Typography>
       
       <Grid
