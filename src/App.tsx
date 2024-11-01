@@ -5,6 +5,18 @@ import Loader from "./components/formikInputs/Loader.tsx";
 import "./index.css";
 import Footer from "./components/formikInputs/Footer.tsx";
 import { ThemeProvider, createTheme } from "@mui/material";
+import NavBar from "./components/formikInputs/NavBar.tsx";
+import InterestForm from "./pages/InterestForm.tsx";
+import ScrollToTop from "./components/ScrollToTop";
+
+declare module '@mui/material/styles' {
+  interface Palette {
+    custom: Palette['primary'];
+  }
+  interface PaletteOptions {
+    custom?: PaletteOptions['primary'];
+  }
+}
 
 const App: FC = () => {
   const [loading, setLoading] = useState(true);
@@ -17,12 +29,12 @@ const App: FC = () => {
   const theme = createTheme({
     palette: {
       primary: {
-        main: "#ffffff",
-        contrastText: "#000000",
+        main: "#78AFF0",
+        contrastText: "#f5f5dc",
       },
       secondary: {
-        main: "#4285f4",
-        contrastText: "#ffffff",
+        main: "#0659B5",
+        contrastText: "#000000",
       },
       text: {
         primary: "#000000",
@@ -37,35 +49,41 @@ const App: FC = () => {
         main: "#6F757B",
         contrastText: "#5454EF",
       },
+      custom: { // Add custom palette option
+        light: "#e54538",
+        main: "#10a052",
+        dark: "#f6bc18",
+        contrastText: "#4683f0",
+      },
     },
     typography: {
       fontFamily: "Product Sans, Inter, Arial, sans-serif",
       h1: {
-        fontFamily: "Product Sans, Arial, sans-serif",
+        fontFamily: "Kdam Thmor Pro",
         fontWeight: 600,
         fontSize: "48px",
         lineHeight: "110%",
       },
       h2: {
-        fontFamily: "Product Sans, Arial, sans-serif",
+        fontFamily: "Kdam Thmor Pro",
         fontWeight: 600,
         fontSize: "38px",
         lineHeight: "100%",
       },
       h3: {
-        fontFamily: "Product Sans, Arial, sans-serif",
+        fontFamily: "Kdam Thmor Pro",
         fontWeight: 600,
         fontSize: "28px",
         lineHeight: "95%",
       },
       h4: {
-        fontFamily: "Product Sans, Arial, sans-serif",
+        fontFamily: "Kdam Thmor Pro",
         fontWeight: 600,
         fontSize: "18px",
         lineHeight: "95%",
       },
       h5: {
-        fontFamily: "Product Sans, Arial, sans-serif",
+        fontFamily: "Kdam Thmor Pro",
         fontWeight: 600,
         fontSize: "8px",
         lineHeight: "90%",
@@ -130,16 +148,18 @@ const App: FC = () => {
   });
 
   return (
-    <Router basename="/gdsc-hackathon-web">
-      <div className="app-container">
+    <Router>
+      <ScrollToTop />
+      <div className="app-container gradient-bg">
         <ThemeProvider theme={theme}>
           {loading ? (
             <Loader /> // Display the Loader on initial load
           ) : (
             <>
-              {/**  <NavBar />*/}
+             <NavBar />
               <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/interest-form" element={<InterestForm/>} />
                 <Route path="*" element="notfound"/>
               </Routes>
               <div style={{backgroundColor: '#f9f9ff', marginTop: '10vh'}}> 

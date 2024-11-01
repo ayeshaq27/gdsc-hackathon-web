@@ -1,11 +1,15 @@
+/* Import the Kdam Thmor Pro font */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
 .home-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Center align items horizontally */
   justify-content: center;
-  height: 90vh;
-  background-color: #ffffff;
+  margin-bottom: 20vh !important;
   text-align: center;
+  position: relative; /* Add relative positioning */
+  padding-top: 15vh;
 }
 
 .logo {
@@ -14,13 +18,102 @@
   margin-bottom: 20px;
 }
 
-.main-heading {
-  font-size: 2.5rem; /* Adjusted for smaller screens */
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 10vh !important;
+.heading-container {
+  display: flex;
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+  gap: 2rem; /* Add space between wheel and heading */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  width: 100%; /* Full width */
 }
 
+.heading {
+  text-align: left;
+  flex: 1; /* Take up remaining space */
+}
+
+.wheel-wrapper {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  justify-content: center; /* Center align wheel horizontally */
+}
+
+.wheel {
+  width: 30vw;
+  max-width: 50vw !important;
+  min-width: 30vw;
+  animation: spin 20s linear infinite; /* Add spinning animation */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -10px);
+  }
+  50% {
+    transform: translate(0, -20px);
+  }
+  75% {
+    transform: translate(-10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.main-heading {
+  font-size: 8rem !important; /* Adjusted for smaller screens */
+  margin: 20px 0px 20px 0px !important;
+}
+
+.second-heading {
+  font-size: 6rem !important; /* Adjusted for smaller screens */
+  text-align: center;
+  margin: 20px 0px 20px 0px !important;
+  z-index: 8 !important; /* Ensure this text is above the CN Tower image */
+}
+
+.cntower {
+  z-index: 1 !important; /* Ensure the CN Tower image is behind other elements but visible */
+  /*position: absolute;  Ensure it is positioned correctly */
+  width: 70vw !important;
+  max-width: 80vw;
+  animation: float 5s ease-in-out infinite; /* Add floating animation */
+}
+
+.SPONSOR {
+  background-color: #f5f5dc;
+  margin-top: 10vh;
+  padding: 5vw;
+  border-radius: 30px;
+}
+.bighbox {
+  background-color: #f5f5dc;
+  margin-top: 10vh;
+  padding: 5vw;
+  border-radius: 30px;
+}
+.timeP {
+  margin-top: 10vh !important;
+  padding: 5vw !important;
+  border-radius: 30px;
+}
+.faq {
+  margin-top: 10vh !important;
+  
+  border-radius: 30px;
+}
 .timer-grid {
   display: flex;
   justify-content: center;
@@ -29,16 +122,13 @@
 }
 
 .timer-box {
-  background-color: #4285f4; /* Blue color */
   border-radius: 10px;
   padding: 20px 30px;
   margin: 10px; /* Adjusted for better spacing on smaller screens */
 }
 
 .timer-value {
-  font-size: 2.5rem; /* Adjusted for smaller screens */
-  font-weight: bold;
-  color: #ffffff; /* White color */
+  font-size: 5rem !important; /* Adjusted for smaller screens */
 }
 
 .timer-label {
@@ -48,31 +138,210 @@
   margin-top: 10px;
 }
 
+
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-  .main-heading {
-    font-size: 2rem; /* Smaller font size for tablets */
+  .heading {
+    text-align: center;
   }
-
+  .subH {
+    font-size: 1.5rem !important;
+  }
+  .home-container {
+    padding-top: 15vh;
+  }
+  .main-heading {
+    font-size: 4rem !important; /* Smaller font size for tablets */
+  }
   .timer-value {
     font-size: 2rem; /* Smaller font size for tablets */
   }
-
   .timer-box {
     padding: 15px 20px; /* Adjust padding for tablets */
+  }
+  .second-heading {
+    font-size: 3rem !important; /* Adjusted for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
+  .heading-container {
+    flex-direction: column; /* Stack heading and wheel vertically */
+    align-items: center; /* Center align items horizontally */
+  }
+  .wheel-wrapper {
+    order: -1; /* Make the wheel appear first */
+  }
+  .heading {
+    padding-left: 10px !important; /* Adjust padding for mobile */
+  }
   .main-heading {
     font-size: 1.5rem; /* Smaller font size for mobile */
   }
-
   .timer-value {
-    font-size: 1.5rem; /* Smaller font size for mobile */
+    font-size: 1.5rem !important; /* Smaller font size for mobile */
   }
-
   .timer-box {
     padding: 10px 15px; /* Adjust padding for mobile */
+  }
+  .timer-grid {
+    flex-direction: row; /* Make the timer items in one line */
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+  .timer-item {
+    flex: 1; /* Ensure items take equal space */
+    text-align: center; /* Center align text */
+  }
+  .timer-colon {
+    flex: 0; /* Ensure colons don't take extra space */
+    font-size: 1.5rem !important; /* Adjust font size for mobile */
+  }
+  .hide-on-mobile {
+    display: none !important; /* Hide elements on mobile */
+  }
+}
+
+/* Home.css */
+
+/* Container for the hackathon text and images */
+.hackathon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;  
+ 
+  padding-left: 0 !important;
+  gap: 10px;
+  /*background-color: #ffffff;  Light blue background */
+  margin: 0 !important; 
+   margin-top: 15vh !important;
+  text-align: center;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  max-width: 110vw; /* Ensure the container does not extend beyond the viewport */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.hackathon-item {
+  font-family: 'Arial', sans-serif;
+  font-size: 7rem !important; /* Use the font size of the main-heading */
+  font-weight: bold;
+  color: #ffffff; /* Dark blue color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 40%; /* Flex items to take up equal space */
+  opacity: 0; /* Start hidden */
+  transform: translateX(-100%); /* Start off-screen to the left */
+  max-width: 850px;
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  white-space: nowrap; /* Prevent text wrapping */
+  clip-path: inset(0 0 0 0); /* Clip the text at the container's boundary */
+}
+
+.hackathon-item:nth-child(odd) {
+  transform: translateX(-100%); /* Slide in from the left */
+}
+
+.hackathon-item:nth-child(even) {
+  transform: translateX(100%); /* Slide in from the right */
+}
+
+.hackathon-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.hackathon-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.hackathon-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.hackathon-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.hackathon-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.hackathon-item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.hackathon-item:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.hackathon-item:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.hackathon-item:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+.hackathon-item:nth-child(10) {
+  animation-delay: 1s;
+}
+
+.hackathon-item.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s, opacity 1s;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Style for images inside the grid */
+.hackathon-image {
+  width: 7vw; /* Make the image responsive */
+  height: auto;
+  max-width: 150px !important;
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hackathon-container {
+    flex-direction: row; /* Three-column layout for smaller screens */
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+
+  .hackathon-item {
+    font-size: 4rem !important; /* Slightly smaller text on mobile */
+    flex: 1 1 10% !important; /* Three items per row */
+    transform: translateX(0); /* Reset transform for mobile */
+    white-space: normal; /* Allow text wrapping */
+    overflow: visible; /* Allow overflow text to be visible */
+    text-overflow: clip; /* Clip the text without ellipsis */
+  }
+
+  .hackathon-item.slide-in {
+    transform: translateX(0); /* Ensure items are visible on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .hackathon-item {
+    font-size: 2rem !important; /* Even smaller text on mobile */
+    flex: 1 1 20%; /* Three items per row */
+    white-space: normal; /* Allow text wrapping */
+    overflow: visible; /* Allow overflow text to be visible */
+    text-overflow: clip; /* Clip the text without ellipsis */
+  }
+
+  .hackathon-image {
+    width: 10vw; /* Adjust image size for mobile */
+    max-width: 100px !important;
   }
 }

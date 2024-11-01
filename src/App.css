@@ -1,5 +1,6 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kaushan+Script&family=Kdam+Thmor+Pro&display=swap');
 
 .content-wrapper {
   padding-left: 16px;
@@ -20,12 +21,12 @@
   }
 }
 .primary-bg {
-  background: #FFFFFF;
+  background: #78AFF0;
 }
 
 
-.smoke-bg {
-  background: #F5F5F5;
+.gradient-bg {
+  background: linear-gradient(180deg, #78AFF0, #0659B5);
 }
 
 /* Regular, Medium , SemiBold, Bold */
@@ -38,7 +39,7 @@
 }
 
 .font-lg-21 {
-  font-size: 24px !important;
+  font-size: 21px !important;
 }
 
 
@@ -84,28 +85,28 @@
 }
 
 .text-reg {
-  font-family:Product Sans Regular, Arial, sans-serif !important;
+  font-family: 'Comfortaa', Arial, sans-serif !important;
   font-weight: 400 !important;
   line-height: 150% !important;
   word-wrap: break-word;
 }
 
 .text-med {
-  font-family:Product Sans Medium, Arial, sans-serif !important;
+  font-family: 'Comfortaa', Arial, sans-serif !important;
   font-weight: 500 !important;
   line-height: 150% !important;
   word-wrap: break-word;
 }
 
 .text-semibold {
-  font-family:Product Sans Bold, Arial, sans-serif !important;
+  font-family: 'Comfortaa', Arial, sans-serif !important;
   font-weight: 600 !important;
   line-height: 150% !important;
   word-wrap: break-word;
 }
 
 .text-bold {
-  font-family:Product Sans Black, Arial, sans-serif !important;
+  font-family: 'Comfortaa', Arial, sans-serif !important;
   font-weight: 700 !important;
   line-height: 150% !important;
   word-wrap: break-word;
@@ -216,11 +217,14 @@ ul.list li::before {
     display:none;
   }
 }
-
+.bttnF {
+  color: #ffffff !important;
+ font-size: 1.2rem !important;
+}
 .bttnO:hover,
 .bttnO:active {
   background-color: #4285F4 !important;
-  color: #F5F5F5 !important;
+  color: #ffffff !important;
   
 }
 .bttnF:hover,
