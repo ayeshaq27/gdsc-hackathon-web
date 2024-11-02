@@ -88,7 +88,7 @@ const Home: React.FC = () => {
         </div>
         <div className="heading">
           <Typography variant="h1" color="secondary.main" className="subH">
-            GDG TMU
+            GDG TMU'S
           </Typography>
           <Typography
             variant="h1"
@@ -136,17 +136,18 @@ const Home: React.FC = () => {
                   zIndex:2
                 }}
               >
-                TORONTO'S BIGGEST HACKATHON
+                "TORONTO'S BIGGEST HACKATHON"
               </Typography>
               <Typography
                 className="text-reg font-nm-16"
                 color="secondary.contrastText"
                 sx={{ order: { xs: 3, md: 2 },zIndex:2 }}
               >
-                Join us this February for an unforgettable 36 hour event, where more than 1,000 hackers will come together to connect, build, and grow. Enjoy free meals, awesome swag, fun activities, and much more! 
+                Join us this February for an unforgettable 36 hour event, where 1,000 hackers will come together to connect, build, and grow. Enjoy free meals, awesome swag, fun activities, and much more!
+
  
 
-                <br /> <br />At Solution Hacks TO, we welcome those who dream big and love to create. No matter your skill level, we want you to come out and create something impactful.
+                <br /> <br />At Solution Hacks, we welcome those who dream big and love to create. No matter your skill level, we want you to come out and create something impactful.
           
               </Typography>
               <Button

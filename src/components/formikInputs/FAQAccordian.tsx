@@ -23,7 +23,7 @@ function FAQAccordion() {
     },
     {
       question: 'Who can participate?',
-      answer: 'Students of any education level are eligible to apply for Solution Hacks! All attendees must be 13 years or older to participate.',
+      answer: 'Students of any education level are eligible to apply for SolutionHacks! All attendees must be 13 years or older to participate.',
     },
     {
       question: 'How many people per team?',
@@ -39,14 +39,18 @@ function FAQAccordion() {
     },
     {
       question: 'When do applications open?',
-      answer: 'Soon! Submit this interest form so we can alert you as soon as applications open.',
+      answer: (
+        <>
+          Soon! Submit this <a href="/interest-form">interest form</a> so we can alert you as soon as applications open.
+        </>
+      ),
     },
     {
       question: 'What should I bring?',
       answer: 'Your laptop and a piece of valid ID. You can also bring your own pillow and blanket if you’d prefer',
     },
     {
-      question: 'How can I get in contact with GDGTMU?',
+      question: 'How can I get in contact with (GDG TMU)?',
       answer: 'Email: solutionhacks.gdg@gmail.com',
     }
     
